@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 clamp(12px, 14vw, 280px);
+    gap: clamp(12px, 2.5vw, 50px);
+}
+
+.FKB {
+    height: clamp(60px, 7vw, 90px);
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    gap: clamp(14px, 3.3vw, 63px);
+    min-width: 0;
+}
+
+.nav-links li {
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(12px, 1.1vw, 18px);
+}
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 1.5vw, 20px);
+    flex-shrink: 0;
+}
+
+.EU {
+    height: clamp(28px, 2.4vw, 40px);
+    width: auto;
+    display: block;
+}
+
+.horvat{
+    height: clamp(620px, 40.1vw, 770px);
+    transform: scale(1.02);
+    display: block;
+}
+
+button {
+    height: 52px;
+    width: 115px;
+    font-weight: 800;
+    border: 2.5px solid rgb(82, 163, 82);
+    background: black;
+    color: white;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.menu {
+    width: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.menu span {
+    height: 2px;
+    width: 27px;
+    background: white;
+}
+
+@media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+}
